@@ -1,5 +1,5 @@
 //
-//  UIViewController+Extension.h
+//  JLRoutes+Block.h
 //  RealmExamples
 //  
 //  Created by ash on 2019/4/10.
@@ -7,17 +7,18 @@
 //
     
 
-#import <UIKit/UIKit.h>
+#import "JLRoutes.h"
+#import "JLRRouteDefinition.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIApplication (Current)
+//@interface JLRoutes (Block)
+//
+//+ (BOOL)routeURL:(nullable NSURL *)URL callback:(RoutesCallback)callback;
+//
+//@end
 
-+ (UIViewController *)topViewController;
-
-@end
-
-@interface UIViewController (Extension)<RoutesProtocol>
+@interface JLRRouteDefinition (Block)
 
 @property (nonatomic, copy) RoutesCallback routesCallback;
 

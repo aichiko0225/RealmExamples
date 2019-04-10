@@ -11,6 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ 路由管理类，添加各种类型的路由
+ */
 @interface CCRouterManager : NSObject
 
 + (instancetype)shareManager;

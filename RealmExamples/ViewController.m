@@ -57,7 +57,6 @@
     });
 }
 
-
 - (IBAction)route1:(UIButton *)sender {
     
     NSString *routePath = [routePath1 stringByAppendingString:@"?keyword=333&title=test_title"];
@@ -68,6 +67,13 @@
 - (IBAction)route2:(UIButton *)sender {
     BOOL r2 = [JLRoutes routeURL:[NSURL URLWithRoutePath:routePath2]];
     NSLog(@"route2 === %d", r2);
+}
+
+- (IBAction)route3:(UIButton *)sender {
+    BOOL r3 = [JLRoutes routeURL:[NSURL URLWithRoutePath:routePath3] callback:^(id  _Nonnull data) {
+        NSLog(@"route3 callback %@", data);
+    }];
+    NSLog(@"route3 === %d", r3);
 }
 
 @end

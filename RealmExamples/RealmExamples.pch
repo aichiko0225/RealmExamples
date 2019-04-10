@@ -13,9 +13,11 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #import <Realm/Realm.h>
-#import <JLRoutes/JLRoutes.h>
+#import "JLRoutes.h"
 
 #import "RoutesConfig.h"
 #import "NSURL+Routes.h"
+#import "JLRoutes+Block.h"
+#import "UIViewController+Extension.h"
 
 #endif /* RealmExamples_pch */

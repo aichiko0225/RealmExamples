@@ -2,29 +2,25 @@ PODS:
   - cocore (1.1.0)
   - coobjc (1.1.0):
     - cocore (~> 1.1.0)
-  - JLRoutes (2.1)
   - Realm (3.13.1):
     - Realm/Headers (= 3.13.1)
   - Realm/Headers (3.13.1)
 
 DEPENDENCIES:
   - coobjc
-  - JLRoutes
   - Realm
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - cocore
     - coobjc
-    - JLRoutes
     - Realm
 
 SPEC CHECKSUMS:
   cocore: dfaf5fb52b518fbbb5076061386294051a8f62d3
   coobjc: 5d43a8ac49c150e253cc6f936db3a9a465aebde9
-  JLRoutes: d755245322b94227662ea3e43492fdca94e05c5b
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
 
-PODFILE CHECKSUM: 3bfc61505ae368f82d90f8c4ec990e137d44827c
+PODFILE CHECKSUM: 9dbc4a6a9a295b5a353498b768c29a751f24dca5
 
 COCOAPODS: 1.6.1

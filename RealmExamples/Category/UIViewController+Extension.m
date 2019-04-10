@@ -37,7 +37,10 @@
 
 @end
 
+static NSString *routesCallbackKey = @"routesCallbackKey";
+
 @implementation UIViewController (Extension)
+@dynamic routesCallback;
 
 + (instancetype)routeWithParameters:(NSDictionary<NSString *,id> *)parameters {
     UIViewController *vc = [[self alloc] init];
@@ -56,6 +59,18 @@
         }
     }
     return vc;
+}
+
+- (void)responseCallback:(RoutesCallback)callBack {
+    self.routesCallback = callBack;
+}
+
+- (void)setRoutesCallback:(RoutesCallback)routesCallback {
+    objc_setAssociatedObject(self, &routesCallbackKey, routesCallback, OBJC_ASSOCIATION_COPY);
+}
+
+- (RoutesCallback)routesCallback {
+    return (RoutesCallback)objc_getAssociatedObject(self, &routesCallbackKey);
 }
 
 @end
