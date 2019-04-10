@@ -15,4 +15,7 @@
 #import <Realm/Realm.h>
 #import <JLRoutes/JLRoutes.h>
 
+#import "RoutesConfig.h"
+#import "NSURL+Routes.h"
+
 #endif /* RealmExamples_pch */

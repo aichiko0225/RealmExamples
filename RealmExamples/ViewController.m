@@ -58,4 +58,17 @@
 }
 
 
+
+- (IBAction)route1:(UIButton *)sender {
+    
+    NSString *routePath = [routePath1 stringByAppendingString:@"?iii=333&ss=444"];
+    BOOL r1 = [JLRoutes routeURL:[NSURL URLWithRoutePath:routePath]];
+    NSLog(@"%d", r1);
+}
+
+- (IBAction)route2:(UIButton *)sender {
+    BOOL r2 = [JLRoutes routeURL:[NSURL URLWithRoutePath:routePath2]];
+    NSLog(@"%d", r2);
+}
+
 @end

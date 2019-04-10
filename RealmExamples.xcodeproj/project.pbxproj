@@ -15,6 +15,11 @@
 		5E1DDC48225B3E360044265E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E1DDC46225B3E360044265E /* LaunchScreen.storyboard */; };
 		5E1DDC4B225B3E360044265E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1DDC4A225B3E360044265E /* main.m */; };
 		5E1DDC53225B8A260044265E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1DDC52225B8A260044265E /* Person.m */; };
+		5E4089FD225D9EEC0033BDFE /* CCRouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4089FC225D9EEC0033BDFE /* CCRouterManager.m */; };
+		5E408A01225D9FE80033BDFE /* RouteViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A00225D9FE80033BDFE /* RouteViewController1.m */; };
+		5E408A04225D9FF90033BDFE /* RouteViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A03225D9FF90033BDFE /* RouteViewController2.m */; };
+		5E408A07225DB9A60033BDFE /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A06225DB9A60033BDFE /* UIViewController+Extension.m */; };
+		5E408A0B225DC1170033BDFE /* NSURL+Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A0A225DC1170033BDFE /* NSURL+Routes.m */; };
 		B6DF9EACFE7C36713E834D14 /* Pods_RealmExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DF0E64568A9914D0207F74 /* Pods_RealmExamples.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +40,17 @@
 		5E1DDC51225B8A260044265E /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		5E1DDC52225B8A260044265E /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		5E1DDC54225B8A5B0044265E /* RealmExamples.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmExamples.pch; sourceTree = "<group>"; };
+		5E4089FB225D9EEC0033BDFE /* CCRouterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCRouterManager.h; sourceTree = "<group>"; };
+		5E4089FC225D9EEC0033BDFE /* CCRouterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCRouterManager.m; sourceTree = "<group>"; };
+		5E4089FF225D9FE80033BDFE /* RouteViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteViewController1.h; sourceTree = "<group>"; };
+		5E408A00225D9FE80033BDFE /* RouteViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteViewController1.m; sourceTree = "<group>"; };
+		5E408A02225D9FF90033BDFE /* RouteViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteViewController2.h; sourceTree = "<group>"; };
+		5E408A03225D9FF90033BDFE /* RouteViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteViewController2.m; sourceTree = "<group>"; };
+		5E408A05225DB9A60033BDFE /* UIViewController+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
+		5E408A06225DB9A60033BDFE /* UIViewController+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
+		5E408A08225DBB9F0033BDFE /* RoutesConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoutesConfig.h; sourceTree = "<group>"; };
+		5E408A09225DC1170033BDFE /* NSURL+Routes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+Routes.h"; sourceTree = "<group>"; };
+		5E408A0A225DC1170033BDFE /* NSURL+Routes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Routes.m"; sourceTree = "<group>"; };
 		8EEE3F922CE8157C21C37FBB /* Pods-RealmExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmExamples.release.xcconfig"; path = "Target Support Files/Pods-RealmExamples/Pods-RealmExamples.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,10 +87,16 @@
 		5E1DDC37225B3E340044265E /* RealmExamples */ = {
 			isa = PBXGroup;
 			children = (
+				5E4089FE225D9FC50033BDFE /* ViewContollers */,
+				5E4089FA225D957D0033BDFE /* Routers */,
 				5E1DDC38225B3E340044265E /* AppDelegate.h */,
 				5E1DDC39225B3E340044265E /* AppDelegate.m */,
 				5E1DDC3B225B3E340044265E /* ViewController.h */,
 				5E1DDC3C225B3E340044265E /* ViewController.m */,
+				5E408A05225DB9A60033BDFE /* UIViewController+Extension.h */,
+				5E408A06225DB9A60033BDFE /* UIViewController+Extension.m */,
+				5E408A09225DC1170033BDFE /* NSURL+Routes.h */,
+				5E408A0A225DC1170033BDFE /* NSURL+Routes.m */,
 				5E1DDC51225B8A260044265E /* Person.h */,
 				5E1DDC52225B8A260044265E /* Person.m */,
 				5E1DDC54225B8A5B0044265E /* RealmExamples.pch */,
@@ -86,6 +108,27 @@
 				5E1DDC41225B3E340044265E /* RealmExamples.xcdatamodeld */,
 			);
 			path = RealmExamples;
+			sourceTree = "<group>";
+		};
+		5E4089FA225D957D0033BDFE /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				5E408A08225DBB9F0033BDFE /* RoutesConfig.h */,
+				5E4089FB225D9EEC0033BDFE /* CCRouterManager.h */,
+				5E4089FC225D9EEC0033BDFE /* CCRouterManager.m */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		5E4089FE225D9FC50033BDFE /* ViewContollers */ = {
+			isa = PBXGroup;
+			children = (
+				5E4089FF225D9FE80033BDFE /* RouteViewController1.h */,
+				5E408A00225D9FE80033BDFE /* RouteViewController1.m */,
+				5E408A02225D9FF90033BDFE /* RouteViewController2.h */,
+				5E408A03225D9FF90033BDFE /* RouteViewController2.m */,
+			);
+			path = ViewContollers;
 			sourceTree = "<group>";
 		};
 		71D16B402D22680AA53B4FE1 /* Pods */ = {
@@ -133,8 +176,9 @@
 		5E1DDC2D225B3E340044265E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CC;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = ash;
+				ORGANIZATIONNAME = whty;
 				TargetAttributes = {
 					5E1DDC34225B3E340044265E = {
 						CreatedOnToolsVersion = 10.2;
@@ -231,7 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E1DDC3D225B3E340044265E /* ViewController.m in Sources */,
+				5E408A04225D9FF90033BDFE /* RouteViewController2.m in Sources */,
+				5E408A0B225DC1170033BDFE /* NSURL+Routes.m in Sources */,
+				5E408A01225D9FE80033BDFE /* RouteViewController1.m in Sources */,
+				5E408A07225DB9A60033BDFE /* UIViewController+Extension.m in Sources */,
 				5E1DDC3A225B3E340044265E /* AppDelegate.m in Sources */,
+				5E4089FD225D9EEC0033BDFE /* CCRouterManager.m in Sources */,
 				5E1DDC53225B8A260044265E /* Person.m in Sources */,
 				5E1DDC4B225B3E360044265E /* main.m in Sources */,
 				5E1DDC43225B3E340044265E /* RealmExamples.xcdatamodeld in Sources */,
