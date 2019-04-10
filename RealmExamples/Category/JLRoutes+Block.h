@@ -7,16 +7,16 @@
 //
     
 
-#import "JLRoutes.h"
-#import "JLRRouteDefinition.h"
+#import <JLRoutes/JLRoutes.h>
+#import <JLRoutes/JLRRouteDefinition.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-//@interface JLRoutes (Block)
-//
-//+ (BOOL)routeURL:(nullable NSURL *)URL callback:(RoutesCallback)callback;
-//
-//@end
+@interface JLRoutes (Block)
+
++ (BOOL)routeURL:(nullable NSURL *)URL callback:(RoutesCallback)callback;
+
+@end
 
 @interface JLRRouteDefinition (Block)
 

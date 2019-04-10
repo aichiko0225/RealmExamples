@@ -22,12 +22,6 @@
 		5E408A0B225DC1170033BDFE /* NSURL+Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A0A225DC1170033BDFE /* NSURL+Routes.m */; };
 		5E408A12225DDB740033BDFE /* JLRoutes+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A11225DDB740033BDFE /* JLRoutes+Block.m */; };
 		5E408A15225DDE050033BDFE /* RouteViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A14225DDE050033BDFE /* RouteViewController3.m */; };
-		5E408A24225DE2560033BDFE /* JLRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A17225DE2560033BDFE /* JLRoutes.m */; };
-		5E408A25225DE2560033BDFE /* JLRRouteDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A19225DE2560033BDFE /* JLRRouteDefinition.m */; };
-		5E408A26225DE2560033BDFE /* JLRRouteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A1F225DE2560033BDFE /* JLRRouteRequest.m */; };
-		5E408A27225DE2560033BDFE /* JLRRouteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A20225DE2560033BDFE /* JLRRouteHandler.m */; };
-		5E408A28225DE2560033BDFE /* JLRRouteResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A21225DE2560033BDFE /* JLRRouteResponse.m */; };
-		5E408A29225DE2560033BDFE /* JLRParsingUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A22225DE2560033BDFE /* JLRParsingUtilities.m */; };
 		B6DF9EACFE7C36713E834D14 /* Pods_RealmExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DF0E64568A9914D0207F74 /* Pods_RealmExamples.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,18 +57,6 @@
 		5E408A11225DDB740033BDFE /* JLRoutes+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JLRoutes+Block.m"; sourceTree = "<group>"; };
 		5E408A13225DDE050033BDFE /* RouteViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteViewController3.h; sourceTree = "<group>"; };
 		5E408A14225DDE050033BDFE /* RouteViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteViewController3.m; sourceTree = "<group>"; };
-		5E408A17225DE2560033BDFE /* JLRoutes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLRoutes.m; sourceTree = "<group>"; };
-		5E408A19225DE2560033BDFE /* JLRRouteDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLRRouteDefinition.m; sourceTree = "<group>"; };
-		5E408A1A225DE2560033BDFE /* JLRRouteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLRRouteRequest.h; sourceTree = "<group>"; };
-		5E408A1B225DE2560033BDFE /* JLRRouteResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLRRouteResponse.h; sourceTree = "<group>"; };
-		5E408A1C225DE2560033BDFE /* JLRRouteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLRRouteHandler.h; sourceTree = "<group>"; };
-		5E408A1D225DE2560033BDFE /* JLRParsingUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLRParsingUtilities.h; sourceTree = "<group>"; };
-		5E408A1E225DE2560033BDFE /* JLRRouteDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLRRouteDefinition.h; sourceTree = "<group>"; };
-		5E408A1F225DE2560033BDFE /* JLRRouteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLRRouteRequest.m; sourceTree = "<group>"; };
-		5E408A20225DE2560033BDFE /* JLRRouteHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLRRouteHandler.m; sourceTree = "<group>"; };
-		5E408A21225DE2560033BDFE /* JLRRouteResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLRRouteResponse.m; sourceTree = "<group>"; };
-		5E408A22225DE2560033BDFE /* JLRParsingUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLRParsingUtilities.m; sourceTree = "<group>"; };
-		5E408A23225DE2560033BDFE /* JLRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLRoutes.h; sourceTree = "<group>"; };
 		8EEE3F922CE8157C21C37FBB /* Pods-RealmExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmExamples.release.xcconfig"; path = "Target Support Files/Pods-RealmExamples/Pods-RealmExamples.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +93,6 @@
 		5E1DDC37225B3E340044265E /* RealmExamples */ = {
 			isa = PBXGroup;
 			children = (
-				5E408A16225DE2560033BDFE /* JLRoutes */,
 				5E4089FE225D9FC50033BDFE /* ViewContollers */,
 				5E4089FA225D957D0033BDFE /* Routers */,
 				5E408A0C225DC80A0033BDFE /* Category */,
@@ -166,33 +147,6 @@
 				5E408A11225DDB740033BDFE /* JLRoutes+Block.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		5E408A16225DE2560033BDFE /* JLRoutes */ = {
-			isa = PBXGroup;
-			children = (
-				5E408A23225DE2560033BDFE /* JLRoutes.h */,
-				5E408A17225DE2560033BDFE /* JLRoutes.m */,
-				5E408A18225DE2560033BDFE /* Classes */,
-			);
-			path = JLRoutes;
-			sourceTree = "<group>";
-		};
-		5E408A18225DE2560033BDFE /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				5E408A19225DE2560033BDFE /* JLRRouteDefinition.m */,
-				5E408A1A225DE2560033BDFE /* JLRRouteRequest.h */,
-				5E408A1B225DE2560033BDFE /* JLRRouteResponse.h */,
-				5E408A1C225DE2560033BDFE /* JLRRouteHandler.h */,
-				5E408A1D225DE2560033BDFE /* JLRParsingUtilities.h */,
-				5E408A1E225DE2560033BDFE /* JLRRouteDefinition.h */,
-				5E408A1F225DE2560033BDFE /* JLRRouteRequest.m */,
-				5E408A20225DE2560033BDFE /* JLRRouteHandler.m */,
-				5E408A21225DE2560033BDFE /* JLRRouteResponse.m */,
-				5E408A22225DE2560033BDFE /* JLRParsingUtilities.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		71D16B402D22680AA53B4FE1 /* Pods */ = {
@@ -312,6 +266,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RealmExamples/Pods-RealmExamples-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/cocore/cocore.framework",
 				"${BUILT_PRODUCTS_DIR}/coobjc/coobjc.framework",
@@ -320,6 +275,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLRoutes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cocore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/coobjc.framework",
@@ -337,20 +293,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E1DDC3D225B3E340044265E /* ViewController.m in Sources */,
-				5E408A27225DE2560033BDFE /* JLRRouteHandler.m in Sources */,
-				5E408A29225DE2560033BDFE /* JLRParsingUtilities.m in Sources */,
-				5E408A24225DE2560033BDFE /* JLRoutes.m in Sources */,
 				5E408A12225DDB740033BDFE /* JLRoutes+Block.m in Sources */,
 				5E408A15225DDE050033BDFE /* RouteViewController3.m in Sources */,
 				5E408A04225D9FF90033BDFE /* RouteViewController2.m in Sources */,
-				5E408A25225DE2560033BDFE /* JLRRouteDefinition.m in Sources */,
-				5E408A26225DE2560033BDFE /* JLRRouteRequest.m in Sources */,
 				5E408A0B225DC1170033BDFE /* NSURL+Routes.m in Sources */,
 				5E408A01225D9FE80033BDFE /* RouteViewController1.m in Sources */,
 				5E408A07225DB9A60033BDFE /* UIViewController+Extension.m in Sources */,
 				5E1DDC3A225B3E340044265E /* AppDelegate.m in Sources */,
 				5E4089FD225D9EEC0033BDFE /* CCRouterManager.m in Sources */,
-				5E408A28225DE2560033BDFE /* JLRRouteResponse.m in Sources */,
 				5E1DDC53225B8A260044265E /* Person.m in Sources */,
 				5E1DDC4B225B3E360044265E /* main.m in Sources */,
 				5E1DDC43225B3E340044265E /* RealmExamples.xcdatamodeld in Sources */,

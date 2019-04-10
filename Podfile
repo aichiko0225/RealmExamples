@@ -8,6 +8,6 @@ pod 'Realm'
 
 pod 'coobjc'
 
-# pod 'JLRoutes'
+pod 'JLRoutes'
 
 end

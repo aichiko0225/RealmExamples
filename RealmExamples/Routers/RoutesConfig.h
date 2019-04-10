@@ -10,6 +10,8 @@
 #ifndef RoutesConfig_h
 #define RoutesConfig_h
 
+typedef void(^RoutesCallback)(id data);
+
 @protocol RoutesProtocol <NSObject>
 
 @required
