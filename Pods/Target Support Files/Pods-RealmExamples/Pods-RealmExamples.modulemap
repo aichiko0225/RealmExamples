@@ -1,0 +1,6 @@
+framework module Pods_RealmExamples {
+  umbrella header "Pods-RealmExamples-umbrella.h"
+
+  export *
+  module * { export * }
+}
