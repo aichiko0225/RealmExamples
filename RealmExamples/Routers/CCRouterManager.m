@@ -35,6 +35,7 @@
             NSLog(@"%@", class);
             id newVC = ((id (*) (id, SEL, id))objc_msgSend)(class, sel, parameters);
             UIViewController *pushVC = (UIViewController *)newVC;
+            pushVC.hidesBottomBarWhenPushed = YES;
             [[UIApplication topViewController].navigationController pushViewController:pushVC animated:YES];
             RoutesCallback callback = (RoutesCallback)[parameters objectForKey:RoutesCallbackKey];
             if ([pushVC respondsToSelector:@selector(responseCallback:)] && callback) {
