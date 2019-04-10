@@ -16,11 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BOOL)routeURL:(nullable NSURL *)URL callback:(RoutesCallback)callback;
 
-@end
-
-@interface JLRRouteDefinition (Block)
-
-@property (nonatomic, copy) RoutesCallback routesCallback;
++ (BOOL)routeURL:(nullable NSURL *)URL withParameters:(nullable NSDictionary<NSString *, id> *)parameters callback:(RoutesCallback)callback;
 
 @end
 

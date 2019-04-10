@@ -36,30 +36,14 @@
             id newVC = ((id (*) (id, SEL, id))objc_msgSend)(class, sel, parameters);
             UIViewController *pushVC = (UIViewController *)newVC;
             [[UIApplication topViewController].navigationController pushViewController:pushVC animated:YES];
-            return YES;
-        }
-        return NO;
-    }];
-    
-    __block JLRRouteDefinition *routeDefinition = [[JLRRouteDefinition alloc] initWithPattern:@"/view/block/:controller" priority:0 handlerBlock:^BOOL(NSDictionary * _Nonnull parameters) {
-        NSLog(@"%@", parameters);
-        NSString *controller = [parameters objectForKey:@"controller"];
-        Class class = NSClassFromString(controller);
-        if ([class respondsToSelector:@selector(routeWithParameters:)]) {
-            SEL sel = @selector(routeWithParameters:);
-            NSLog(@"%@", class);
-            id newVC = ((id (*) (id, SEL, id))objc_msgSend)(class, sel, parameters);
-            UIViewController *pushVC = (UIViewController *)newVC;
-            [[UIApplication topViewController].navigationController pushViewController:pushVC animated:YES];
-            if ([pushVC respondsToSelector:@selector(responseCallback:)]) {
-                RoutesCallback callback = routeDefinition.routesCallback;
+            RoutesCallback callback = (RoutesCallback)[parameters objectForKey:RoutesCallbackKey];
+            if ([pushVC respondsToSelector:@selector(responseCallback:)] && callback) {
                 [pushVC performSelectorOnMainThread:@selector(responseCallback:) withObject:callback waitUntilDone:YES];
             }
             return YES;
         }
         return NO;
     }];
-    [route addRoute:routeDefinition];
 }
 
 @end

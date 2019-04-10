@@ -12,6 +12,8 @@
 
 typedef void(^RoutesCallback)(id data);
 
+static NSString *RoutesCallbackKey = @"RoutesCallback";
+
 @protocol RoutesProtocol <NSObject>
 
 @required
@@ -25,7 +27,7 @@ static NSString *routePath1 = @"/view/RouteViewController1";
 
 static NSString *routePath2 = @"/view/RouteViewController2";
 
-static NSString *routePath3 = @"/view/block/RouteViewController3";
+static NSString *routePath3 = @"/view/RouteViewController3";
 
 static NSString *route_scheme = @"whty";
 static NSString *route_host = @"whty.com";

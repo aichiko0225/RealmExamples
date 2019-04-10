@@ -10,17 +10,17 @@
 #import "JLRoutes+Block.h"
 #import <objc/runtime.h>
 
-static NSString *routesCallbackKey = @"JLRRouteDefinition_routesCallbackKey";
+@implementation JLRoutes (Block)
 
-@implementation JLRRouteDefinition (Block)
-@dynamic routesCallback;
-
-- (void)setRoutesCallback:(RoutesCallback)routesCallback {
-    objc_setAssociatedObject(self, &routesCallbackKey, routesCallback, OBJC_ASSOCIATION_COPY);
++ (BOOL)routeURL:(nullable NSURL *)URL callback:(RoutesCallback)callback {
+    // 将block 直接传入
+    return [self routeURL:URL withParameters:@{RoutesCallbackKey: callback}];
 }
 
-- (RoutesCallback)routesCallback {
-    return (RoutesCallback)objc_getAssociatedObject(self, &routesCallbackKey);
++ (BOOL)routeURL:(nullable NSURL *)URL withParameters:(nullable NSDictionary<NSString *, id> *)parameters callback:(RoutesCallback)callback {
+    NSMutableDictionary<NSString *, id> *new_parameters = [NSMutableDictionary dictionaryWithDictionary:parameters];
+    [new_parameters setObject:callback forKey:RoutesCallbackKey];
+    return [self routeURL:URL withParameters:new_parameters];
 }
 
 @end
