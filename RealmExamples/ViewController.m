@@ -58,17 +58,16 @@
 }
 
 
-
 - (IBAction)route1:(UIButton *)sender {
     
-    NSString *routePath = [routePath1 stringByAppendingString:@"?iii=333&ss=444"];
+    NSString *routePath = [routePath1 stringByAppendingString:@"?keyword=333&title=test_title"];
     BOOL r1 = [JLRoutes routeURL:[NSURL URLWithRoutePath:routePath]];
-    NSLog(@"%d", r1);
+    NSLog(@"route1 === %d", r1);
 }
 
 - (IBAction)route2:(UIButton *)sender {
     BOOL r2 = [JLRoutes routeURL:[NSURL URLWithRoutePath:routePath2]];
-    NSLog(@"%d", r2);
+    NSLog(@"route2 === %d", r2);
 }
 
 @end

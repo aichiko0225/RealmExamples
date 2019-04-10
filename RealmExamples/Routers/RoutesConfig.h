@@ -9,6 +9,9 @@
 
 #ifndef RoutesConfig_h
 #define RoutesConfig_h
+#import <UIKit/UIKit.h>
+
+typedef UIViewController *(^RoutesCallBack)(void);
 
 @protocol RoutesProtocol <NSObject>
 
@@ -20,5 +23,8 @@
 static NSString *routePath1 = @"/view/RouteViewController1";
 
 static NSString *routePath2 = @"/view/RouteViewController2";
+
+static NSString *route_scheme = @"whty";
+static NSString *route_host = @"whty.com";
 
 #endif /* RoutesConfig_h */

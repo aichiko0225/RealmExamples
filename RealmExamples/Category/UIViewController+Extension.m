@@ -8,6 +8,7 @@
     
 
 #import "UIViewController+Extension.h"
+#import <objc/runtime.h>
 
 @implementation UIApplication (Current)
 
@@ -39,7 +40,22 @@
 @implementation UIViewController (Extension)
 
 + (instancetype)routeWithParameters:(NSDictionary<NSString *,id> *)parameters {
-    return [[self alloc] init];
+    UIViewController *vc = [[self alloc] init];
+    NSString *title = [parameters objectForKey:@"title"];
+    if (title) {
+        vc.title = title;
+    }
+    unsigned int outCount = 0;
+    objc_property_t *properties = class_copyPropertyList(vc.class , &outCount);
+    for (int i = 0; i < outCount; i++) {
+        objc_property_t property = properties[i];
+        NSString *key = [NSString stringWithUTF8String:property_getName(property)];
+        NSString *value = parameters[key];
+        if (value != nil) {
+            [vc setValue:value forKey:key];
+        }
+    }
+    return vc;
 }
 
 @end

@@ -12,9 +12,7 @@
 @implementation NSURL (Routes)
 
 + (instancetype)URLWithRoutePath:(NSString *)routePath {
-    NSString *scheme = @"whty";
-    NSString *baseURL = @"whty.com";
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@://%@", scheme, baseURL]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@://%@", route_scheme, route_host]];
     return [self URLWithString:routePath relativeToURL:url];
 }
 

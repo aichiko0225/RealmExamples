@@ -89,14 +89,11 @@
 			children = (
 				5E4089FE225D9FC50033BDFE /* ViewContollers */,
 				5E4089FA225D957D0033BDFE /* Routers */,
+				5E408A0C225DC80A0033BDFE /* Category */,
 				5E1DDC38225B3E340044265E /* AppDelegate.h */,
 				5E1DDC39225B3E340044265E /* AppDelegate.m */,
 				5E1DDC3B225B3E340044265E /* ViewController.h */,
 				5E1DDC3C225B3E340044265E /* ViewController.m */,
-				5E408A05225DB9A60033BDFE /* UIViewController+Extension.h */,
-				5E408A06225DB9A60033BDFE /* UIViewController+Extension.m */,
-				5E408A09225DC1170033BDFE /* NSURL+Routes.h */,
-				5E408A0A225DC1170033BDFE /* NSURL+Routes.m */,
 				5E1DDC51225B8A260044265E /* Person.h */,
 				5E1DDC52225B8A260044265E /* Person.m */,
 				5E1DDC54225B8A5B0044265E /* RealmExamples.pch */,
@@ -129,6 +126,17 @@
 				5E408A03225D9FF90033BDFE /* RouteViewController2.m */,
 			);
 			path = ViewContollers;
+			sourceTree = "<group>";
+		};
+		5E408A0C225DC80A0033BDFE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5E408A05225DB9A60033BDFE /* UIViewController+Extension.h */,
+				5E408A06225DB9A60033BDFE /* UIViewController+Extension.m */,
+				5E408A09225DC1170033BDFE /* NSURL+Routes.h */,
+				5E408A0A225DC1170033BDFE /* NSURL+Routes.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		71D16B402D22680AA53B4FE1 /* Pods */ = {

@@ -19,7 +19,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = [[self class] description];
+    if (self.title.length == 0) {
+        self.navigationItem.title = [[self class] description];
+    }
+    
+    NSLog(@"keyword == %@", _keyword);
 }
 
 /*

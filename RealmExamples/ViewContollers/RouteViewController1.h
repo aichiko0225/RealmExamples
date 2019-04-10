@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RouteViewController1 : UIViewController
 
+@property (nonatomic, copy) NSString *keyword;
+
 @end
 
 NS_ASSUME_NONNULL_END
