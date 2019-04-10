@@ -230,14 +230,23 @@ static Class JLRGlobal_routeDefinitionClass;
 
 + (BOOL)routeURL:(nullable NSURL *)URL callback:(RoutesCallback)callback
 {
-    return [[self _routesControllerForURL:URL] _routeURL:URL callback:callback];
+    return [[self _routesControllerForURL:URL] routeURL:URL callback:callback];
 }
 
-- (BOOL)_routeURL:(NSURL *)URL callback:(RoutesCallback)callback
+- (BOOL)routeURL:(NSURL *)URL callback:(RoutesCallback)callback
 {
     return [self _routeURL:URL withParameters:nil executeRouteBlock:YES callback:callback];
 }
 
+- (BOOL)routeURL:(NSURL *)URL withParameters:(NSDictionary *)parameters callback:(RoutesCallback)callback
+{
+    return [self _routeURL:URL withParameters:parameters executeRouteBlock:YES callback:callback];
+}
+
++ (BOOL)routeURL:(nullable NSURL *)URL withParameters:(nullable NSDictionary<NSString *, id> *)parameters callback:(RoutesCallback)callback
+{
+    return [[self _routesControllerForURL:URL] routeURL:URL withParameters:parameters callback:callback];
+}
 
 #pragma mark - Private
 

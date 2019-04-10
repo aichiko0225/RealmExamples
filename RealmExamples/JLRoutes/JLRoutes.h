@@ -137,6 +137,12 @@ typedef void(^RoutesCallback)(id data);
 /// add callback
 + (BOOL)routeURL:(nullable NSURL *)URL callback:(RoutesCallback)callback;
 
++ (BOOL)routeURL:(nullable NSURL *)URL withParameters:(nullable NSDictionary<NSString *, id> *)parameters callback:(RoutesCallback)callback;
+
+- (BOOL)routeURL:(NSURL *)URL callback:(RoutesCallback)callback;
+
+- (BOOL)routeURL:(NSURL *)URL withParameters:(NSDictionary *)parameters callback:(RoutesCallback)callback;
+
 @end
 
 
