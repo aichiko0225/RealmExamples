@@ -18,6 +18,6 @@
 #import "RoutesConfig.h"
 #import "NSURL+Routes.h"
 #import "JLRoutes+Block.h"
-#import "UIViewController+Extension.h"
+#import "UIViewController+Router.h"
 
 #endif /* RealmExamples_pch */

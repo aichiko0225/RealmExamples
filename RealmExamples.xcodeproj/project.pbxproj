@@ -18,11 +18,11 @@
 		5E4089FD225D9EEC0033BDFE /* CCRouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4089FC225D9EEC0033BDFE /* CCRouterManager.m */; };
 		5E408A01225D9FE80033BDFE /* RouteViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A00225D9FE80033BDFE /* RouteViewController1.m */; };
 		5E408A04225D9FF90033BDFE /* RouteViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A03225D9FF90033BDFE /* RouteViewController2.m */; };
-		5E408A07225DB9A60033BDFE /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A06225DB9A60033BDFE /* UIViewController+Extension.m */; };
 		5E408A0B225DC1170033BDFE /* NSURL+Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A0A225DC1170033BDFE /* NSURL+Routes.m */; };
 		5E408A12225DDB740033BDFE /* JLRoutes+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A11225DDB740033BDFE /* JLRoutes+Block.m */; };
 		5E408A15225DDE050033BDFE /* RouteViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A14225DDE050033BDFE /* RouteViewController3.m */; };
 		5E408A51225F0C840033BDFE /* CCRouterGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A50225F0C840033BDFE /* CCRouterGuard.m */; };
+		5E408A5B225F15990033BDFE /* UIViewController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A5A225F15990033BDFE /* UIViewController+Router.m */; };
 		B6DF9EACFE7C36713E834D14 /* Pods_RealmExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DF0E64568A9914D0207F74 /* Pods_RealmExamples.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +49,6 @@
 		5E408A00225D9FE80033BDFE /* RouteViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteViewController1.m; sourceTree = "<group>"; };
 		5E408A02225D9FF90033BDFE /* RouteViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteViewController2.h; sourceTree = "<group>"; };
 		5E408A03225D9FF90033BDFE /* RouteViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteViewController2.m; sourceTree = "<group>"; };
-		5E408A05225DB9A60033BDFE /* UIViewController+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
-		5E408A06225DB9A60033BDFE /* UIViewController+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
 		5E408A08225DBB9F0033BDFE /* RoutesConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoutesConfig.h; sourceTree = "<group>"; };
 		5E408A09225DC1170033BDFE /* NSURL+Routes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+Routes.h"; sourceTree = "<group>"; };
 		5E408A0A225DC1170033BDFE /* NSURL+Routes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Routes.m"; sourceTree = "<group>"; };
@@ -60,6 +58,8 @@
 		5E408A14225DDE050033BDFE /* RouteViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteViewController3.m; sourceTree = "<group>"; };
 		5E408A4F225F0C830033BDFE /* CCRouterGuard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCRouterGuard.h; sourceTree = "<group>"; };
 		5E408A50225F0C840033BDFE /* CCRouterGuard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCRouterGuard.m; sourceTree = "<group>"; };
+		5E408A59225F15980033BDFE /* UIViewController+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Router.h"; sourceTree = "<group>"; };
+		5E408A5A225F15990033BDFE /* UIViewController+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Router.m"; sourceTree = "<group>"; };
 		8EEE3F922CE8157C21C37FBB /* Pods-RealmExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmExamples.release.xcconfig"; path = "Target Support Files/Pods-RealmExamples/Pods-RealmExamples.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +98,6 @@
 			children = (
 				5E4089FE225D9FC50033BDFE /* ViewContollers */,
 				5E4089FA225D957D0033BDFE /* Routers */,
-				5E408A0C225DC80A0033BDFE /* Category */,
 				5E1DDC38225B3E340044265E /* AppDelegate.h */,
 				5E1DDC39225B3E340044265E /* AppDelegate.m */,
 				5E1DDC3B225B3E340044265E /* ViewController.h */,
@@ -119,6 +118,7 @@
 		5E4089FA225D957D0033BDFE /* Routers */ = {
 			isa = PBXGroup;
 			children = (
+				5E408A0C225DC80A0033BDFE /* Category */,
 				5E408A08225DBB9F0033BDFE /* RoutesConfig.h */,
 				5E4089FB225D9EEC0033BDFE /* CCRouterManager.h */,
 				5E4089FC225D9EEC0033BDFE /* CCRouterManager.m */,
@@ -148,10 +148,11 @@
 				5E408A11225DDB740033BDFE /* JLRoutes+Block.m */,
 				5E408A09225DC1170033BDFE /* NSURL+Routes.h */,
 				5E408A0A225DC1170033BDFE /* NSURL+Routes.m */,
-				5E408A05225DB9A60033BDFE /* UIViewController+Extension.h */,
-				5E408A06225DB9A60033BDFE /* UIViewController+Extension.m */,
+				5E408A59225F15980033BDFE /* UIViewController+Router.h */,
+				5E408A5A225F15990033BDFE /* UIViewController+Router.m */,
 			);
-			path = Category;
+			name = Category;
+			path = ../Category;
 			sourceTree = "<group>";
 		};
 		71D16B402D22680AA53B4FE1 /* Pods */ = {
@@ -303,9 +304,9 @@
 				5E408A04225D9FF90033BDFE /* RouteViewController2.m in Sources */,
 				5E408A0B225DC1170033BDFE /* NSURL+Routes.m in Sources */,
 				5E408A01225D9FE80033BDFE /* RouteViewController1.m in Sources */,
-				5E408A07225DB9A60033BDFE /* UIViewController+Extension.m in Sources */,
 				5E1DDC3A225B3E340044265E /* AppDelegate.m in Sources */,
 				5E4089FD225D9EEC0033BDFE /* CCRouterManager.m in Sources */,
+				5E408A5B225F15990033BDFE /* UIViewController+Router.m in Sources */,
 				5E1DDC53225B8A260044265E /* Person.m in Sources */,
 				5E1DDC4B225B3E360044265E /* main.m in Sources */,
 				5E408A51225F0C840033BDFE /* CCRouterGuard.m in Sources */,

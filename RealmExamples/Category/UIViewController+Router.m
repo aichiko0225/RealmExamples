@@ -7,7 +7,7 @@
 //
     
 
-#import "UIViewController+Extension.h"
+#import "UIViewController+Router.h"
 #import <objc/runtime.h>
 
 @implementation UIApplication (Current)
@@ -39,7 +39,7 @@
 
 static NSString *routesCallbackKey = @"routesCallbackKey";
 
-@implementation UIViewController (Extension)
+@implementation UIViewController (Routes)
 @dynamic routesCallback;
 
 + (instancetype)routeWithParameters:(NSDictionary<NSString *,id> *)parameters {

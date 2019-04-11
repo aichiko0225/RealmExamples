@@ -19,7 +19,8 @@
     return [[self alloc] initWithCallback:callback];
 }
 
-- (instancetype)initWithCallback:(RouterGuardCallback)callback {
+- (instancetype)initWithCallback:(RouterGuardCallback)callback
+{
     self = [super init];
     if (self) {
         self->_callback = callback;

@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface UIViewController (Extension)<RoutesProtocol>
+@interface UIViewController (Routes)<RoutesProtocol>
 
 @property (nonatomic, copy) RoutesCallback routesCallback;
 
