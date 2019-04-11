@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    /*
     RLMRealm *realm = [RLMRealm defaultRealm];
     // 获取 Realm 文件的父目录
     NSString *folderPath = realm.configuration.fileURL.URLByDeletingLastPathComponent.path;
@@ -55,6 +55,7 @@
             NSLog(@"%ld", puppies.count);
         }
     });
+     */
 }
 
 - (IBAction)route1:(UIButton *)sender {
