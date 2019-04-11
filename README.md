@@ -38,22 +38,23 @@
 @end
 ```
 
+
+
 **Example**
 ```objc
+
 - (IBAction)route1:(UIButton *)sender {
     NSString *routePath = [routePath1 stringByAppendingString:@"?keyword=xxkeyword&title=test_title"];
     BOOL r1 = [JLRoutes routeURL:[NSURL URLWithRoutePath:routePath]];
-}
-
-- (IBAction)route2:(UIButton *)sender {
+    
     BOOL r2 = [JLRoutes routeURL:[NSURL URLWithRoutePath:routePath2]];
-}
-
-- (IBAction)route3:(UIButton *)sender {
+    
     BOOL r3 = [JLRoutes routeURL:[NSURL URLWithRoutePath:routePath3] callback:^(id  _Nonnull data) {
         NSLog(@"route3 callback %@", data);
     }];
+    
+    
+    
 }
-
 ```
 
