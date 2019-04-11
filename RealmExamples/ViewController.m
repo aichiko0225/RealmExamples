@@ -76,4 +76,12 @@
     NSLog(@"route3 === %d", r3);
 }
 
+- (IBAction)present1:(UIButton *)sender {
+    // 守卫可以进行拦截
+    [JLRoutes routeURL:[NSURL URLWithRoutePath:routePath3] routerGuard:[CCRouterGuard routerGuardWithCallback:^BOOL{
+        return NO;
+    }]];
+}
+
+
 @end

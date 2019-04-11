@@ -10,9 +10,13 @@
 #ifndef RoutesConfig_h
 #define RoutesConfig_h
 
+/** 路由回调函数 */
 typedef void(^RoutesCallback)(id data);
+/** 路由守卫函数 返回NO则中止路由行为 */
+typedef BOOL(^RouterGuardCallback)(void);
 
 static NSString *RoutesCallbackKey = @"RoutesCallback";
+static NSString *RouterGuardKey = @"RouterGuardKey";
 
 @protocol RoutesProtocol <NSObject>
 
@@ -23,11 +27,13 @@ static NSString *RoutesCallbackKey = @"RoutesCallback";
 
 @end
 
-static NSString *routePath1 = @"/view/RouteViewController1";
+static NSString *routePath1 = @"/push/RouteViewController1";
 
-static NSString *routePath2 = @"/view/RouteViewController2";
+static NSString *routePath2 = @"/push/RouteViewController2";
 
-static NSString *routePath3 = @"/view/RouteViewController3";
+static NSString *routePath3 = @"/push/RouteViewController3";
+
+static NSString *routePath4 = @"/present/navi/RouteViewController1";
 
 static NSString *route_scheme = @"whty";
 static NSString *route_host = @"whty.com";
