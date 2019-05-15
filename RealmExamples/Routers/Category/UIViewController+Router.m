@@ -22,7 +22,7 @@
         return nil;
     }
     if (root.presentedViewController != nil) {
-        return root.presentedViewController;
+        return [self getCurrentControllerWith:root.presentedViewController];
     }
     if ([root isKindOfClass:[UITabBarController class]]) {
         UITabBarController *rootVC = (UITabBarController *)root;

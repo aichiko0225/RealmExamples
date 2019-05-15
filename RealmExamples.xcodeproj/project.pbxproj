@@ -23,6 +23,9 @@
 		5E408A62225F17650033BDFE /* NSURL+Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A5E225F17650033BDFE /* NSURL+Routes.m */; };
 		5E408A63225F17650033BDFE /* JLRoutes+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A60225F17650033BDFE /* JLRoutes+Block.m */; };
 		5E408A64225F17650033BDFE /* UIViewController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A61225F17650033BDFE /* UIViewController+Router.m */; };
+		5EA37370226DA4B300CE3C28 /* RACViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA3736F226DA4B300CE3C28 /* RACViewController1.m */; };
+		5EA3737A226DB69C00CE3C28 /* CCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA37379226DB69C00CE3C28 /* CCViewModel.m */; };
+		5EFC8267228C103500574E6E /* CCRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC8266228C103500574E6E /* CCRoute.m */; };
 		B6DF9EACFE7C36713E834D14 /* Pods_RealmExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DF0E64568A9914D0207F74 /* Pods_RealmExamples.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +63,12 @@
 		5E408A5F225F17650033BDFE /* UIViewController+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Router.h"; path = "RealmExamples/Routers/Category/UIViewController+Router.h"; sourceTree = SOURCE_ROOT; };
 		5E408A60225F17650033BDFE /* JLRoutes+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "JLRoutes+Block.m"; path = "RealmExamples/Routers/Category/JLRoutes+Block.m"; sourceTree = SOURCE_ROOT; };
 		5E408A61225F17650033BDFE /* UIViewController+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Router.m"; path = "RealmExamples/Routers/Category/UIViewController+Router.m"; sourceTree = SOURCE_ROOT; };
+		5EA3736E226DA4B300CE3C28 /* RACViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACViewController1.h; sourceTree = "<group>"; };
+		5EA3736F226DA4B300CE3C28 /* RACViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACViewController1.m; sourceTree = "<group>"; };
+		5EA37378226DB69C00CE3C28 /* CCViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCViewModel.h; sourceTree = "<group>"; };
+		5EA37379226DB69C00CE3C28 /* CCViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCViewModel.m; sourceTree = "<group>"; };
+		5EFC8265228C103500574E6E /* CCRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCRoute.h; sourceTree = "<group>"; };
+		5EFC8266228C103500574E6E /* CCRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCRoute.m; sourceTree = "<group>"; };
 		8EEE3F922CE8157C21C37FBB /* Pods-RealmExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmExamples.release.xcconfig"; path = "Target Support Files/Pods-RealmExamples/Pods-RealmExamples.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +105,8 @@
 		5E1DDC37225B3E340044265E /* RealmExamples */ = {
 			isa = PBXGroup;
 			children = (
+				5EA37375226DB66E00CE3C28 /* MVVM */,
+				5EA3736D226DA48300CE3C28 /* ReactiveCocoa */,
 				5E4089FE225D9FC50033BDFE /* ViewContollers */,
 				5E4089FA225D957D0033BDFE /* Routers */,
 				5E1DDC38225B3E340044265E /* AppDelegate.h */,
@@ -118,6 +129,7 @@
 		5E4089FA225D957D0033BDFE /* Routers */ = {
 			isa = PBXGroup;
 			children = (
+				5EFC8264228C100F00574E6E /* CustomRoutes */,
 				5E408A0C225DC80A0033BDFE /* Category */,
 				5E408A08225DBB9F0033BDFE /* RoutesConfig.h */,
 				5E4089FB225D9EEC0033BDFE /* CCRouterManager.h */,
@@ -153,6 +165,49 @@
 			);
 			name = Category;
 			path = ../Category;
+			sourceTree = "<group>";
+		};
+		5EA3736D226DA48300CE3C28 /* ReactiveCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				5EA3736E226DA4B300CE3C28 /* RACViewController1.h */,
+				5EA3736F226DA4B300CE3C28 /* RACViewController1.m */,
+			);
+			name = ReactiveCocoa;
+			sourceTree = "<group>";
+		};
+		5EA37375226DB66E00CE3C28 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				5EA37376226DB67700CE3C28 /* ViewModels */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		5EA37376226DB67700CE3C28 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5EA37377226DB68C00CE3C28 /* BaseClass */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5EA37377226DB68C00CE3C28 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				5EA37378226DB69C00CE3C28 /* CCViewModel.h */,
+				5EA37379226DB69C00CE3C28 /* CCViewModel.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		5EFC8264228C100F00574E6E /* CustomRoutes */ = {
+			isa = PBXGroup;
+			children = (
+				5EFC8265228C103500574E6E /* CCRoute.h */,
+				5EFC8266228C103500574E6E /* CCRoute.m */,
+			);
+			path = CustomRoutes;
 			sourceTree = "<group>";
 		};
 		71D16B402D22680AA53B4FE1 /* Pods */ = {
@@ -273,6 +328,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RealmExamples/Pods-RealmExamples-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/cocore/cocore.framework",
 				"${BUILT_PRODUCTS_DIR}/coobjc/coobjc.framework",
@@ -282,6 +338,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLRoutes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cocore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/coobjc.framework",
@@ -301,10 +358,13 @@
 				5E1DDC3D225B3E340044265E /* ViewController.m in Sources */,
 				5E408A63225F17650033BDFE /* JLRoutes+Block.m in Sources */,
 				5E408A62225F17650033BDFE /* NSURL+Routes.m in Sources */,
+				5EA37370226DA4B300CE3C28 /* RACViewController1.m in Sources */,
 				5E408A15225DDE050033BDFE /* RouteViewController3.m in Sources */,
 				5E408A04225D9FF90033BDFE /* RouteViewController2.m in Sources */,
 				5E408A01225D9FE80033BDFE /* RouteViewController1.m in Sources */,
 				5E1DDC3A225B3E340044265E /* AppDelegate.m in Sources */,
+				5EA3737A226DB69C00CE3C28 /* CCViewModel.m in Sources */,
+				5EFC8267228C103500574E6E /* CCRoute.m in Sources */,
 				5E4089FD225D9EEC0033BDFE /* CCRouterManager.m in Sources */,
 				5E408A64225F17650033BDFE /* UIViewController+Router.m in Sources */,
 				5E1DDC53225B8A260044265E /* Person.m in Sources */,

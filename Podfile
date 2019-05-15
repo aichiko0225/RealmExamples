@@ -10,4 +10,6 @@ pod 'coobjc'
 
 pod 'JLRoutes'
 
+pod 'ReactiveObjC'
+
 end
