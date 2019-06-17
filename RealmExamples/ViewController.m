@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import "UITextField+Swizzle.h"
 
 @interface ViewController ()
 
@@ -56,6 +57,41 @@
         }
     });
      */
+    
+//    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 100, 200, 30)];
+//    textField.backgroundColor = [UIColor redColor];
+//    textField.keyboardType = UIKeyboardTypeNumberPad;
+//    [self.view addSubview:textField];
+    
+    
+    TestObject *test1 = [[TestObject alloc] init];
+    test1._ID = @"2222";
+    test1.object = [[TestObject alloc] init];
+    
+    NSLog(@"============== %@", test1.object);
+    
+    NSArray *arr = @[test1._ID];
+    NSArray<TestObject *> *arr1 = @[test1.object];
+    TestObject* arr2[1] = {test1.object};
+    
+    NSLog(@"arr.firstObject === %@", arr.firstObject);
+    NSLog(@"arr1.firstObject === %@", arr1.firstObject);
+    NSLog(@"arr2[0] === %@", arr2[0]);
+    
+    NSLog(@"arr1.firstObject _ID === %@", arr1.firstObject._ID);
+    NSLog(@"arr2[0] _ID === %@", arr2[0]._ID);
+    
+    test1._ID = @"33333";
+    test1.object._ID = @"4444";
+    
+    NSLog(@"test1.object ============== %@", test1.object);
+    
+    NSLog(@"arr.firstObject === %@", arr.firstObject);
+    NSLog(@"arr1.firstObject === %@", arr1.firstObject);
+    NSLog(@"arr2[0] === %@", arr2[0]);
+    
+    NSLog(@"arr1.firstObject _ID === %@", arr1.firstObject._ID);
+    NSLog(@"arr2[0] _ID === %@", arr2[0]._ID);
 }
 
 - (IBAction)route1:(UIButton *)sender {

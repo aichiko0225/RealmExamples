@@ -10,6 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface TestObject : NSObject<NSCopying, NSMutableCopying>
+
+@property (nonatomic, copy) NSString *_ID;
+
+@property (nonatomic, strong) TestObject *object;
+
+@end
+
+
 @interface Dog : RLMObject
 
 @property NSInteger ID;

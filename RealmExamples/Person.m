@@ -8,6 +8,25 @@
 
 #import "Person.h"
 
+@implementation TestObject
+
+- (id)copyWithZone:(nullable NSZone *)zone {
+    TestObject *copyItem = [[self class] allocWithZone:zone];
+    copyItem._ID = self._ID;
+    copyItem.object = self.object;
+    return copyItem;
+}
+
+
+- (id)mutableCopyWithZone:(nullable NSZone *)zone {
+    TestObject *copyItem = [[self class] allocWithZone:zone];
+    copyItem._ID = self._ID;
+    copyItem.object = self.object;
+    return copyItem;
+}
+
+@end
+
 @implementation Dog
 
 + (NSString *)primaryKey {

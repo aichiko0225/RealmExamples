@@ -23,6 +23,7 @@
 		5E408A62225F17650033BDFE /* NSURL+Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A5E225F17650033BDFE /* NSURL+Routes.m */; };
 		5E408A63225F17650033BDFE /* JLRoutes+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A60225F17650033BDFE /* JLRoutes+Block.m */; };
 		5E408A64225F17650033BDFE /* UIViewController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E408A61225F17650033BDFE /* UIViewController+Router.m */; };
+		5E6CDCAA22A6206300F47BE7 /* UITextField+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6CDCA922A6206300F47BE7 /* UITextField+Swizzle.m */; };
 		5EA37370226DA4B300CE3C28 /* RACViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA3736F226DA4B300CE3C28 /* RACViewController1.m */; };
 		5EA3737A226DB69C00CE3C28 /* CCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA37379226DB69C00CE3C28 /* CCViewModel.m */; };
 		5EFC8267228C103500574E6E /* CCRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC8266228C103500574E6E /* CCRoute.m */; };
@@ -63,6 +64,8 @@
 		5E408A5F225F17650033BDFE /* UIViewController+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Router.h"; path = "RealmExamples/Routers/Category/UIViewController+Router.h"; sourceTree = SOURCE_ROOT; };
 		5E408A60225F17650033BDFE /* JLRoutes+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "JLRoutes+Block.m"; path = "RealmExamples/Routers/Category/JLRoutes+Block.m"; sourceTree = SOURCE_ROOT; };
 		5E408A61225F17650033BDFE /* UIViewController+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Router.m"; path = "RealmExamples/Routers/Category/UIViewController+Router.m"; sourceTree = SOURCE_ROOT; };
+		5E6CDCA822A6206300F47BE7 /* UITextField+Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Swizzle.h"; sourceTree = "<group>"; };
+		5E6CDCA922A6206300F47BE7 /* UITextField+Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Swizzle.m"; sourceTree = "<group>"; };
 		5EA3736E226DA4B300CE3C28 /* RACViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACViewController1.h; sourceTree = "<group>"; };
 		5EA3736F226DA4B300CE3C28 /* RACViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACViewController1.m; sourceTree = "<group>"; };
 		5EA37378226DB69C00CE3C28 /* CCViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCViewModel.h; sourceTree = "<group>"; };
@@ -113,6 +116,8 @@
 				5E1DDC39225B3E340044265E /* AppDelegate.m */,
 				5E1DDC3B225B3E340044265E /* ViewController.h */,
 				5E1DDC3C225B3E340044265E /* ViewController.m */,
+				5E6CDCA822A6206300F47BE7 /* UITextField+Swizzle.h */,
+				5E6CDCA922A6206300F47BE7 /* UITextField+Swizzle.m */,
 				5E1DDC51225B8A260044265E /* Person.h */,
 				5E1DDC52225B8A260044265E /* Person.m */,
 				5E1DDC54225B8A5B0044265E /* RealmExamples.pch */,
@@ -369,6 +374,7 @@
 				5E408A64225F17650033BDFE /* UIViewController+Router.m in Sources */,
 				5E1DDC53225B8A260044265E /* Person.m in Sources */,
 				5E1DDC4B225B3E360044265E /* main.m in Sources */,
+				5E6CDCAA22A6206300F47BE7 /* UITextField+Swizzle.m in Sources */,
 				5E408A51225F0C840033BDFE /* CCRouterGuard.m in Sources */,
 				5E1DDC43225B3E340044265E /* RealmExamples.xcdatamodeld in Sources */,
 			);
